@@ -20,6 +20,13 @@ if test -f ~/.fish_profile
   source ~/.fish_profile
 end
 
+# Add ~/.cargo/bin to PATH
+if test -d ~/.cargo/bin
+    if not contains -- ~/.cargo/bin $PATH
+        set -p PATH ~/.cargo/bin
+    end
+end
+
 # Add ~/.local/bin to PATH
 if test -d ~/.local/bin
     if not contains -- ~/.local/bin $PATH
@@ -39,9 +46,6 @@ end
 if status --is-interactive
    source ("/usr/bin/starship" init fish --print-full-init | psub)
 end
-
-## Advanced command-not-found hook
-source /usr/share/doc/find-the-command/ftc.fish
 
 ## Functions
 # Functions needed for !! and !$ https://github.com/oh-my-fish/plugin-bang-bang
