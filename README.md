@@ -2,5 +2,5 @@
 TB-ME's dotfiles
 
 `shell
-stow fish
+$ stow --restow -v -t $HOME tmux
 `
