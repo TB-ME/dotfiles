@@ -44,7 +44,11 @@ end
 
 ## Starship prompt
 if status --is-interactive
-   source ("/usr/bin/starship" init fish --print-full-init | psub)
+   if test -f /usr/bin/starship
+      source ("/usr/bin/starship" init fish --print-full-init | psub)
+   else if test -f /usr/bin/local/starship
+      source ("/usr/bin/local/starship" init fish --print-full-init | psub)
+   end
 end
 
 ## Functions
