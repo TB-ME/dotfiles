@@ -1,6 +1,6 @@
 # README
 TB-ME's dotfiles
 
-`shell
+```shell
 $ stow --restow -v -t $HOME tmux
-`
+```
