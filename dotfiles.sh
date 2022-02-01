@@ -7,9 +7,9 @@ help(){
     printf "Dotfile installer and vscode extension tools\n\n";
     printf "Syntax: ./dotfiles.sh [l|load|s|save|i|install]\n\n";
     printf "Options:\n\n";
-    printf "l|load      loads the vscode extensions from: %s\n" $VSCODE_EXTENSIONS_PATH;
-    printf "s|save      saves the current vscode extensions into: %s\n" $VSCODE_EXTENSIONS_PATH;
-    printf "i|install   installs the current dotfiles\n";
+    printf "\tl|load      loads the vscode extensions from: %s\n" $VSCODE_EXTENSIONS_PATH;
+    printf "\ts|save      saves the current vscode extensions into: %s\n" $VSCODE_EXTENSIONS_PATH;
+    printf "\ti|install   installs the current dotfiles\n";
     printf "\n";
 }
 
