@@ -1,0 +1,7 @@
+asvetliakov.vscode-neovim
+bmalehorn.vscode-fish
+bungcip.better-toml
+GitHub.github-vscode-theme
+PKief.material-icon-theme
+rust-lang.rust
+yzhang.markdown-all-in-one
