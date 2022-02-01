@@ -46,7 +46,7 @@ install(){
     for folder in "${DOTFOLDERS[@]}"
     do
         printf "\t%s\n" $folder
-        stow --target $HOME $folder --override=man --override=info
+        stow --target $HOME $folder --override=man --override=info --adopt
     done
     printf "done"
     return;
@@ -67,7 +67,7 @@ while getopts lhsi-: OPT; do
         ??*         ) exit_abnormal ;;
         ?           ) exit_abnormal ;;
     esac
-    exit;
+    exit 0;
 done
 
 exit 1;
