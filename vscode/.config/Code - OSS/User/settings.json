@@ -3,5 +3,6 @@
     "workbench.colorTheme": "GitHub Dark",
     "rust-client.rustupPath": "/home/thomas/.cargo/bin/rustup",
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-    "terminal.integrated.defaultProfile.linux": "fish"
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "window.zoomLevel": -1
 }

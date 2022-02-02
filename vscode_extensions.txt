@@ -1,7 +1,15 @@
+arcticicestudio.nord-visual-studio-code
+artlaman.chalice-color-theme
 asvetliakov.vscode-neovim
 bmalehorn.vscode-fish
 bungcip.better-toml
+Chrismettal.behave-full-theme
+eamodio.gitlens
 GitHub.github-vscode-theme
+ms-python.python
+ms-toolsai.jupyter
+ms-vscode.Theme-TomorrowKit
+njpwerner.autodocstring
 PKief.material-icon-theme
 rust-lang.rust
 yzhang.markdown-all-in-one
