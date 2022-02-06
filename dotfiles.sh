@@ -41,7 +41,7 @@ install(){
         "fish"
         "nvim"
         "vscode"
-        "tmux",
+        "tmux"
         "conda"
     )
     printf "Stowing Folders: \n"
