@@ -36,11 +36,13 @@ save(){
 
 
 install(){
+    # TODO find theses in current directory
     DOTFOLDERS=(
         "fish"
         "nvim"
         "vscode"
-        "tmux"
+        "tmux",
+        "conda"
     )
     printf "Stowing Folders: \n"
     for folder in "${DOTFOLDERS[@]}"

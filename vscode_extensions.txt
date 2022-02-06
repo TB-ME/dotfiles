@@ -1,3 +1,4 @@
+aaron-bond.better-comments
 arcticicestudio.nord-visual-studio-code
 artlaman.chalice-color-theme
 asvetliakov.vscode-neovim
