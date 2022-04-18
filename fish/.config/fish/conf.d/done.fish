@@ -54,7 +54,6 @@ function __done_windows_notification -a title -a message
     __done_run_powershell_script "
 [Windows.Data.Xml.Dom.XmlDocument, Windows.Data.Xml.Dom.XmlDocument, ContentType = WindowsRuntime] | Out-Null
 [Windows.UI.Notifications.ToastNotification, Windows.UI.Notifications, ContentType = WindowsRuntime] | Out-Null
-
 \$toast_xml_source = @\"
     <toast>
         $soundopt
@@ -66,12 +65,9 @@ function __done_windows_notification -a title -a message
         </visual>
     </toast>
 \"@
-
 \$toast_xml = New-Object Windows.Data.Xml.Dom.XmlDocument
 \$toast_xml.loadXml(\$toast_xml_source)
-
 \$toast = New-Object Windows.UI.Notifications.ToastNotification \$toast_xml
-
 [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier(\"fish\").Show(\$toast)
 "
 end
