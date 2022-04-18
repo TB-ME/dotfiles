@@ -39,26 +39,6 @@ if test -d ~/.local/bin
     end
 end
 
-<<<<<<< HEAD
-# Add depot_tools to PATH
-if test -d ~/Applications/depot_tools
-    if not contains -- ~/Applications/depot_tools $PATH
-        set -p PATH ~/Applications/depot_tools
-    end
-end
-
-
-## Starship prompt
-if status --is-interactive
-   if test -f /usr/bin/starship
-      source ("/usr/bin/starship" init fish --print-full-init | psub)
-   else if test -f /usr/bin/local/starship
-      source ("/usr/bin/local/starship" init fish --print-full-init | psub)
-   end
-end
-
-=======
->>>>>>> personal
 ## Functions
 # Function needed for !! and !$
 function __history_previous_command
@@ -108,34 +88,6 @@ if test -f /usr/bin/exa
 end
 
 # Get fastest mirrors
-<<<<<<< HEAD
-alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
-alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
-alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
-alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
-
-# Help people new to Arch
-alias apt='man pacman'
-alias apt-get='man pacman'
-alias please='sudo'
-alias tb='nc termbin.com 9999'
-
-# Cleanup orphaned packages
-alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
-
-# Get the error messages from journalctl
-alias jctl="journalctl -p 3 -xb"
-
-# Recent installed packages
-alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
-
-
-## Run neofetch if session is interactive
-#if status --is-interactive && type -q neofetch
-#   neofetch
-#end
-
-=======
 if test -f /usr/bin/reflector
     alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
     alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
@@ -152,4 +104,3 @@ end
 if test -f /usr/bin/rg
     alias grep="rg"
 end
->>>>>>> personal
