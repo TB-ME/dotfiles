@@ -1,7 +1,3 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-    {
-    "key": "ctrl+alt+w",
-    "command": "workbench.action.closeActiveEditor"
-    }
 ]
